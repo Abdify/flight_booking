@@ -49,18 +49,6 @@ submitBtn.addEventListener('click', () => {
     let fClassInput = document.querySelector('#fClassInput');
     let eClassInput = document.querySelector('#eClassInput');
     if(subTotal < 100){
-        fClassInput.style.border = '2px solid red';
-        eClassInput.style.border = '2px solid red';
-        fClassInput.style.scale = '1.05';
-        eClassInput.style.scale = '1.05';
-
-        setInterval(() => {
-            fClassInput.style.border = '';
-            eClassInput.style.border = ''; 
-            fClassInput.style.scale = '';
-            eClassInput.style.scale = '';
-        }, 2000);
-
         return;
     }
     //Confirm
