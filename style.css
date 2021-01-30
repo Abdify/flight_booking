@@ -121,6 +121,63 @@ nav ul li a:hover, a.active{
     justify-content: space-between;
 }
 
-#fClassIncreaseBtn, #eClassIncreaseBtn, #fClassDecreaseBtn, #eClassDecreaseBtn{
+#fClassIncreaseBtn, #eClassIncreaseBtn, #fClassDecreaseBtn, #eClassDecreaseBtn, #fClassInput, #eClassInput{
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.confirmation {
+    
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: -1000px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.8s all ease;
+}
+
+.confirmation_content {
+    background-color: #fefefe;
+    color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+    width: 70%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.close{
+    font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    transition: 0.3s all ease;
+}
+.close:first-child{
+    align-self: flex-end;
+}
+.yes_no_btn{
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 0;
+    padding: 10px;
+}
+
+
+.close:hover,
+.close:focus {
+    color: black;
+    scale: 1.05;
+    text-decoration: none;
     cursor: pointer;
 }
